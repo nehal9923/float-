@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  background-image: url(logo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+ 
+}
+
+.navbar {
+  grid-area: navbar;
+  
+}
+
+.sidebar {
+  grid-area: sidebar;
+  
+}
+
+.main {
+  grid-area: main;
+  
+}
+
+.footer {
+  grid-area: footer;
+  
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  100px
+    "navbar"  50px
+    "main"    auto
+    "sidebar" 100px
+    "footer"  100px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template:
+      "header  header" 100px
+      "navbar  navbar" 50px
+      "sidebar main"   auto
+      "footer  footer" 100px /
+      200px    auto;
+  }
+}
+
+
+/*-----heder-----*/
+.header H1{
+    text-align: center;
+    text-decoration: double;
+    text-shadow: #555;
+    font-family: poppins;
+    width: 100%;
+    color: #cc6c18;
+}
+
+.header h3{
+    font-family: poppins;
+    color: #fff;
+}
+
+/*-----heder-----*/
+
+
+/*------barside-----*/
+.aside.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: #000;
+}
+/*--------barside-------*/
+
+  /*------navbar------*/
+.navbar ul{
+    list-style-type: none;
+    
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: #fff;
+    text-size-adjust: 10px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 10PX;
+}
+.navbar a:hover{
+     background-color: #000;
+}
+.navbar li{
+    float: left;
+}
+  /*------navbar--------*/
+
+
+
+/*------articl-----*/
+
+.nehal{
+    width: 900px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    
+
+}
+
+.box{
+    margin: 10px;
+    width: 900px;
+    height: 400px;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    
+}
+img{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    border-radius: 5px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    text-shadow: #555;
+    font-family: Poppins;
+}
+p{
+    color: #f1f1f1;
+    text-decoration: dotted;
+}
+
+/*-------article----*/
+
+
+/*-----footer----*/
+.footer h3{
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+/*-----footer----*/
